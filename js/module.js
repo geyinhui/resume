@@ -47,11 +47,11 @@ myresume.controller('resumeControl',function($scope){
             {
                 projectName : '账单系统',
                 projectAddress: 'https://geyinhui.github.io/resume/index.html',
-            }
+            },
 			{
                 projectName : '登录验证',
                 projectAddress: 'https://geyinhui.github.io/resume/index.html',
-            }
+            },
 			{
                 projectName : '手机端页面',
                 projectAddress: 'https://geyinhui.github.io/resume/index.html',
