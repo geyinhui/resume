@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>九九乘法表</title>
+<script type="text/javascript">
+document.write("<table>");
+	for(var i=1; i<=9; i++){ 
+		document.write("<tr>"); 
+		for(var j=1; j<=i; j++){
+				document.write("<td style='border:1px solid green;width:80px;text-align:center'>"+j+"*"+i+"="+i*j+"</td>");
+			}
+		}
+		document.write("</tr>"); 
+	document.write("</table>"); 
+	var hanzi =["十", "一", "二", "三", "四", "五", "六", "七", "八", "九"
+	];
+	document.write("<table>");
+	for(var i=1; i<=9; i++){ 
+		document.write("<tr>"); 
+		for(var j=1; j<=i; j++){
+			if(i*j<10){
+			document.write("<td style='border:1px solid green;width:80px;text-align:center'>"+ hanzi[j] + hanzi[i] +"得"+hanzi[i*j]+"</td>"); 
+			}
+			else if(i*j%10==0){
+			var ij =i*j;
+			var shiwei =Math.floor(ij/10);
+document.write("<td style='border:1px solid green;width:80px;text-align:center'>"+ hanzi[j] + hanzi[i] +hanzi[shiwei]+hanzi[ij%10]+"</td>");
+			}
+			else if((i*j)>10&&(i*j)<20){
+			var ij =i*j;
+			var shiwei =Math.floor(ij/10);
+document.write("<td style='border:1px solid green;width:80px;text-align:center'>"+ hanzi[j] + hanzi[i]+ hanzi[0]+hanzi[ij%10]+"</td>");
+			}
+			else if(i*j>20){
+			var ij =i*j;
+			var shiwei =Math.floor(ij/10);
+document.write("<td style='border:1px solid green;width:80px;text-align:center'>"+ hanzi[j] + hanzi[i] +hanzi[shiwei]+ hanzi[0]+hanzi[ij%10]+"</td>");
+			}
+		}
+		document.write("</tr>"); 
+	} 
+	document.write("</table>"); 
+
+</script>
+</head>
+
+<body>
+
+</body>
+</html>
