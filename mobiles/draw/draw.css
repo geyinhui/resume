@@ -1,0 +1,75 @@
+body,div,ul,li,dl,dt,dd,p{margin:0px auto; padding:0px; width:auto; height:auto; font-size:12px; }
+ul,li,dl,dt,dd {overflow:hidden;}
+.wrap {
+    min-width: 200px;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    /*background-color: #f8f8f8;*/
+    height: 600px;
+    background-color: #e23536;
+}
+section{
+    min-width: 200px;
+    max-width: 640px;
+    height: 35%;
+    background-size: 100% 100%;
+}
+.drawarea-out{
+    width: 90%;
+    height: 198px;
+    margin: 0 auto;
+    border: 7px solid #99251a;
+    border-radius:7px;
+    position: relative;
+}
+.drawarea-in{
+    width: 87%;
+    height: 154px;
+    margin: 15px auto 0;
+    border: 7px solid #99251a;
+    border-radius:7px;
+    background-color: #99251a;
+}
+.drawarea-in ul{
+    width: 100%;
+}
+.award{
+    background-size: 100% 100%;
+    list-style: none;
+    width: 32%;
+    height: 49px;
+    float:left;
+    margin-bottom: 2px;
+    margin-left: 3px;
+    text-align: center;
+    line-height: 50px;
+    color: #99251a;
+}
+.light-top{
+    width: 87%;
+    height: 1px;
+}
+.deng{
+    float:left;
+    background-size: 100% 100%;
+    width: 5%;
+    margin-left: 1%;
+    margin-right: 2.3%;
+}
+.light-left{
+    width: 4.5%;
+    height: 140px;
+    position: absolute;
+    left: 0px;
+}
+.light-right{
+    width: 4.5%;
+    height: 140px;
+    position: absolute;
+    right: 0px;
+}
+.deng-shu{
+    background-size: 100% 100%;
+    margin: 5px 0px 2px 0px;
+}

@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--禁止缓存-->
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache,must-revalidate"/>
+    <meta http-equiv="expires" content="0"/>
+    <!--编码设置-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link href="all.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrap"><!--最外层-->
+    <div>
+        <section class="user-top" style="position:relative;height:190px;background-image: url(img/background.png)">
+            <div class="user-img" style="display: inline">
+                <img src="img/user.png" alt="" id="photo" style="height: 80px"/>
+            </div>
+            <div class="user-type" style="display: inline">
+                <span id="userName"></span>
+            </div>
+            <div class="rightdir" style="display: inline">
+                <img src="img/rightwhite.png" style="height: 30px">
+            </div>
+        </section>
+        <ul class="package-status clearfix" style="height: 66px;background-color: #ffffff">
+            <li class="status" data-handle="myOrderForPay">
+                <div class="status-wrapper">
+                    <img src="img/allorder.png" alt="" style="padding-left: 12%;"/>
+                    <span class="notice-num" style="width: 100%;position: absolute;margin-left:-4px">全部订单</span>
+                </div>
+            </li>
+            <div class="clearfix boder-xian"></div>
+            <li class="status" data-handle="myOrderForSending">
+                <div class="status-wrapper">
+                    <img src="img/waitforpay.png" alt=""/>
+                    <span class="notice-num">待支付</span>
+                </div>
+            </li>
+            <div class="clearfix boder-xian"></div>
+            <li class="status" data-handle="myOrderForReceive">
+                <div class="status-wrapper">
+                    <img src="img/waitforout.png" alt=""/>
+                    <span class="notice-num">待出行</span>
+                </div>
+            </li>
+            <div class="clearfix boder-xian"></div>
+            <li class="status" data-handle="myOrderForEvaluate">
+                <div class="status-wrapper">
+                    <img src="img/waitforeva.png" alt=""/>
+                    <span class="notice-num">待点评</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="menu-all" style="margin-top: 8px;"><!--11111-->
+        <div class="menu-item">
+            <img src="img/mymoney.png" alt=""/>
+            <span>账户余额</span>
+        </div>
+        <div class="menu-item">
+            <img src="img/coupon.png" alt=""/>
+            <span id="book">优惠券</span>
+        </div>
+    </div>
+    <div id="books" style="margin-top:8px;"><!--22222-->
+        <div class="menu-item">
+        <img src="img/mypinlun.png" alt=""/>
+        <span>我的点评</span>
+        </div>
+        <div class="menu-item">
+        <img src="img/myfav.png" alt=""/>
+        <span>我的收藏</span>
+        </div>
+        <div class="menu-item">
+        <img src="img/infor.png" alt=""/>
+        <span>常用信息</span>
+        </div>
+        <div class="menu-item">
+        <img src="img/myfapiao.png" alt=""/>
+        <span>我的发票</span>
+        </div>
+    </div>
+    <div style="margin-top:8px;"><!--33333-->
+        <div class="menu-item">
+            <img src="img/share.png" alt=""/>
+            <span>分享</span>
+        </div>
+    </div>
+    <div class="foot-nav"><!--底部菜单
+        <ul class="clearfix">
+            <li class="nav-item" data-handle="../index" id="index">
+                <img class="nav-img" src="../img/world.png" alt="">
+                <span class="nav-txt">首页</span>
+            </li>
+            <li class="nav-item" data-handle="../catalogue" id="catalogue">
+                <img class="nav-img" src="../img/ditu.png" alt="">
+                <span class="nav-txt">目的地</span>
+            </li>
+            <li class="nav-item" data-handle="../hot" id="hot">
+                <img class="nav-img" src="../img/server.png" alt="">
+                <span class="nav-txt">服务</span>
+            </li>
+            <li class="nav-item " data-handle="cart" id="cart">
+                <div class="cart-num main-color"></div>
+                <img class="nav-img" src="../img/person.png" alt="">
+                <span class="nav-txt">我的</span>
+            </li>
+        </ul>
+    </div>-->
+
+</div>
+
+<script src="jquery.min.js"></script>
+<script>
+
+    $(function () {
+
+        $.get("../data.json", function (data) {
+            console.log(data);
+            document.getElementById("userName").innerHTML = data.name;
+            var str = "";
+            if (data.myBook) {//判断myBook 是否存在
+                for (var i = 0; i < data.myBook.length; i++) {
+                    var book = data.myBook[i];
+                    str += ('<div class="menu-item">' +
+                            '<img src="../img/mypinlun.png" alt=""/>' +
+                            '<span>' + book.bookName + "/ author:" + book.author + '</span>' +
+                            '</div>');
+                }
+
+                document.getElementById("books").innerHTML = str;
+            }
+
+        });
+    });
+</script>
+
+</body>
+</html>
+
+
