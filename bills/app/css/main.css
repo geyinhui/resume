@@ -1,0 +1,13 @@
+/*无序列表样式去除*/
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    cursor: hand;
+}
+.container-inner{
+    width:1100px;
+}

@@ -1,0 +1,22 @@
+/*payoutBill*/
+.table{
+    text-align: center;
+}
+.setupBill{
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 50px;
+    margin-bottom: 30px;
+}
+.sortBill{
+    margin: 0 50px 0 0;
+}
+.typeBill,.typeBill input{
+    width: 300px;
+}
+.setupBill span{
+    display: inline-block;
+}
+.setupDate{
+    display: inline;
+}
