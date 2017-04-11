@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <title>葛银辉的个人简历</title>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" ng-app="myResume">
+<div class="container-fuild" ng-controller="resumeControl">
+   <div class="nav navbar-inverse resumeTitle">
+        <h1>个人简历-葛银辉</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-2" id="myScrollspy">
+            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
+                <li class="active"><a href="#section-1">基础信息</a></li>
+                <li><a href="#section-2">掌握技能</a></li>
+                <li><a href="#section-3">工作经验</a></li>
+                <li><a href="#section-4">项目经验</a></li>
+                <li><a href="#section-5">自我评价</a></li>
+            </ul>
+        </div>
+        <div class="col-md-10 ">
+            <div class="resumeCont">
+                <div id="section-1" class="resumeList">基础信息</div>
+                <ul class="simpleInfo">
+                    <li><span>姓名：</span><span ng-bind="gyh.name"></span></li>
+                    <li><span>性别：</span><span ng-bind="gyh.sex"></span></li>
+                    <li><span>学校：</span><span ng-bind="gyh.school"></span></li>
+                    <li><span>专业：</span><span ng-bind="gyh.major"></span></li>
+                    <li><span>现居住地：</span><span ng-bind="gyh.nowAddress"></span></li>
+                    <li><span>籍贯：</span><span ng-bind="gyh.nativePlace"></span></li>
+                    <li><span>联系电话：</span><span ng-bind="gyh.tel"></span></li>
+                    <li><span>电子邮件：</span><span ng-bind="gyh.email"></span></li>
+                </ul>
+            </div>
+            <div class="resumeCont">
+                <div id="section-2" class="resumeList">掌握技能</div>
+                <div class="mySkill" >
+                    <div class="mySkillList" ng-repeat="x in gyh.skill">{{x}}</div>
+                </div>
+            <div class="resumeCont">
+                <div id="section-3" class="resumeList">工作经验</div>
+                <div class="myworkCom">
+                    <ul ng-repeat="x in gyh.workPlaces" >
+                        <li><span>公司名称：</span><span>{{x.companyName}}</span></li>
+                        <li><span>工作时间：</span><span>{{x.time}}</span></li>
+                        <li><span>工作岗位：</span><span>{{x.workPost}}</span></li>
+                        <li><span>工作职责：</span><span>{{x.workDuty}}</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resumeCont">
+                <div id="section-4" class="resumeList">项目经验</div>
+                <ul ng-repeat="x in gyh.project" class="simpleInfo">
+                    <li><span>项目名称：</span><span>{{x.projectName}}</span></li>
+                    <li><span>项目链接：</span><span><a href="{{x.projectAddress}}" target="_blank">{{x.projectAddress}}</a></span></li>
+                </ul>
+
+            </div>
+
+                <div class="resumeCont">
+                <div id="section-5" class="resumeList">自我评价</div>
+                <div zwpj="" class="zwpj"></div>
+            </div>
+
+
+
+     
+        </div>
+    </div>
+</div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="js/module.js"></script>
+</body>
+</html>

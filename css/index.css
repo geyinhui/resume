@@ -1,0 +1,109 @@
+/*头部*/
+.resumeTitle{
+    color: #ffffff;
+    text-align: center;
+}
+/*右边个人信息样式*/
+.col-md-10{
+    border-radius: 3px;
+    background-color: #fff;
+    min-height: 450px;
+    width: 900px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    margin: 30px auto 80px;
+    padding-top: 30px;
+}
+.resumeList{
+    width: 200px;
+    background-color: #ec6149;
+    height: 40px;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    border-radius: 10px;
+    clear: both; /*清除浮动*/
+}
+.simpleInfo,.mySkill,.myworkCom,.zwpj{
+    margin-left: 30px;
+}
+.simpleInfo ul {
+    width: 101%;
+}
+.simpleInfo li{
+     width: 50%;
+     float: left;
+     margin: 15px 0 0;
+ }
+.simpleInfo li:last-child{
+    margin-bottom: 15px;
+}
+.mySkill,.myworkCom > :first-child {
+    margin-top: 25px;
+}
+.mySkillList{
+    margin-bottom: 10px;
+}
+.mySkillList:nth-child(2n-1){
+    color: #A52A2A;
+    font-size: 21px ;
+    font-family: "方正姚体";
+}
+.mySkillList:nth-child(2n){
+    color: #551A8B;
+    font-size: 21px;
+    font-weight:  bolder;
+    font-family: "微软雅黑";
+}
+/*工作经验*/
+.myworkCom ul{
+    border: 1px solid #dcdcdc;
+    background-color: hsla(0,0%,71%,.1);
+    border-radius: 4px;
+    min-height: 60px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*自我评价*/
+.zwpj{
+    line-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+ul.nav-tabs{
+        width: 140px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    }
+    ul.nav-tabs li{
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+    ul.nav-tabs li:first-child{
+        border-top: none;
+    }
+    ul.nav-tabs li a{
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #fff;
+        background: #0088cc;
+        border: 1px solid #0088cc;
+    }
+    ul.nav-tabs li:first-child a{
+        border-radius: 4px 4px 0 0;
+    }
+    ul.nav-tabs li:last-child a{
+        border-radius: 0 0 4px 4px;
+    }
+    ul.nav-tabs.affix{
+        top: 30px; /* Set the top position of pinned element */
+    }
