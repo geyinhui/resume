@@ -54,7 +54,7 @@ myresume.controller('resumeControl',function($scope){
             },
 			{
                 projectName : '手机端页面',
-                projectAddress: 'https://geyinhui.github.io/resume/mobile/index.html',
+                projectAddress: 'https://geyinhui.github.io/resume/mobiles/index.html',
             }
         ]
 
