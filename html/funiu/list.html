@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>福牛网</title>	
+	<meta name="keywords" content="{$SEO['keyword']}">
+	<meta name="description" content="{$SEO['description']}">
+	<meta name="baidu-site-verification" content="be81O8l1DN" />
+    <!--mainly stylesheet-->
+    <link rel="stylesheet" href="funiu/css/bootstrap.min.css">
+    <link rel="stylesheet" href="funiu/css/index.css">
+    <link rel="stylesheet" href="funiu/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="funiu/css/plugins/swiper/swiper.min.css">
+    <link rel="stylesheet" href="funiu/css/list.css"/>
+    <link rel="stylesheet" href="funiu/css/bower_components/font-awesome/css/font-awesome.min.css"/>
+</head>
+<body>
+<div id="wrapper" class="wrapper">
+    <!-- top navbar -->
+    <div class="row border-bottom gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-3 pull-left">
+                    <a href="/city.html" class="navbar-top-linka">城市导航</a>
+                </div>
+                <div class="col-lg-6 col-md-9 pull-right">
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <a href="/index.php?m=member&c=index&a=login">
+                                <i class="fa fa-sign-in"></i> 登录
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/index.php?m=member&c=index&a=register&siteid=1">
+                                <i class="fa fa-sign-out"></i> 免费注册
+                            </a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="javascript:void(0);" class="hot-tel">
+                                服务热线：0762-3365866
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- logo -->
+    <div class="row">
+        <div class="container">
+            <div class="row logo">
+                <div class="col-lg-8 col-md-8 col-sm-8 hidden-xs">
+                   <a href="/"><img  style="width:416px;height:150px;margin-top:-15px;margin-bottom:-10px; bottom-right:none;"  
+				   src="funiu/images/logo.jpg" alt="" ></a>
+                </div>
+                <div class="col-xs-12 hidden-md hidden-lg hidden-sm">
+                    <a href="/"><img src="funiu/images/logo.jpg" alt="" width="80%" ></a>
+                </div>
+				<script language="javascript" src="{APP_PATH}index.php?m=poster&c=index&a=show_poster&id=1"></script>
+            </div>
+        </div>
+    </div>
+    <!-- main navbar -->
+    <div class="row border-botton-red">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-block btn-outline btn-lred no-radius hidden-lg hidden-md hidden-sm" onclick="showMainBar();">导航栏 <span class="caret"></span></button>
+                    <ul id="mainNavbar" class="nav navbar-nav main-navbar no-margin hidden-xs">
+                        <li class="active">
+                            <a aria-expanded="false" role="button" href="/"> 首页 </a>
+                        </li>
+                        <li class="dropdown">
+                            <a aria-expanded="false" role="button" class="dropdown-toggle" data-toggle="dropdown"> 效果图 <span class="caret"></span></a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li>
+									<a href="/index.php?m=content&c=index&a=lists&catid=12">效果图</a>
+                                </li>
+                                <li>
+									<a href="/index.php?m=content&c=index&a=lists&catid=13">家居美图</a>
+                                </li>
+                                <li>
+									<a href="/index.php?m=content&c=index&a=lists&catid=14">家装效果图</a>
+                                </li>
+                                <li>
+									<a href="/index.php?m=content&c=index&a=lists&catid=15">工装效果图</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a aria-expanded="false" role="button" href="/index.php?m=yp"> 装修公司 </a>
+                        </li>
+                        <li class="dropdown">
+                            <a aria-expanded="false" role="button" href="/index.php?m=content&c=index&a=lists&catid=16" class="dropdown-toggle" data-toggle="dropdown"> 装修知识 <span class="caret"></span></a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li>
+									<a href="/index.php?m=content&c=index&a=lists&catid=17">装修黑幕</a>
+                                </li>
+                                <li>
+									<a href="/index.php?m=content&c=index&a=lists&catid=18">交换空间</a>
+                                </li>
+                                <li>
+									<a href="/index.php?m=content&c=index&a=lists&catid=19">装修灵感</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a aria-expanded="false" role="button" href="/html/about/contactus/"> 联系我们 </a>
+                        </li>
+                        <li>
+                            <a aria-expanded="false" role="button" href="/index.php?m=formguide&c=index&a=index"> 业主评论 </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="wrapper wrapper-content">
+		<div class="container">
+            <div class="col-md-9 wrapper-content-left">
+                <ul id="item-list">
+                    <li class="row">
+                        <div class="logo-box  col-md-3 col-xs-12 col-sm-3">
+                            <a href="javascript:void(0)" title="河源新思域装饰工程广告有限公司" class="logo" target="_blank">
+                                <img class="logoimg" src="1.png" alt="河源新思域装饰工程广告有限公司" style="display: block;">
+                            </a>
+                            <p>已有<span>432</span>人咨询</p>
+                        </div>
+                        <div class="txt_box  col-md-6 col-xs-12 col-sm-5">
+                            <div class="txt">
+                                <h4>
+                                    <a href="http://xm.bzw315.com/shop/7309/" title="河源新思域装饰工程广告有限公司" target="_blank">河源新思域装饰工程广告有限公司</a>
+                                    <a href="javascript:void(0);" class="icon_badge_box">
+                                        <i class="icon_badge_a" title="保障网A级信用"></i>
+                                        <i class="icon_badge_v" title="保障网Vip会员"></i>
+                                        <i class="icon_badge_s" title="保障网诚信认证"></i>
+                                    </a>
+                                </h4>
+                                <p class="aution">
+                                    <span class="s1" title="营业执照已上传">营</span>
+                                    <span class="s2" >认</span>
+                                    <span class="s3" >惠</span>
+                                    <span class="s4" >金</span>
+                                    <span class="s5" >设</span>
+                                    <span class="s6" >工</span>
+                                    <span class="s7" >评</span>
+                                </p>
+                                <p class="add"><i class="fa fa-map-marker"></i></p>
+                            </div>
+                            <div class="free_part">
+                                <a href="javascript:void(0);" class="free_baojia bzw_popup_04" title="免费装修报价">免费装修报价</a>
+                                <a href="javascript:void(0);" class="free_zixun bzw_popup_03" title="免费预约咨询">免费预约咨询</a>
+                            </div>
+                        </div>
+                        <div class="num_box  col-md-3 col-xs-12 col-sm-4">
+                            <p>口碑值</p>
+                            <strong>0</strong>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="logo-box  col-md-3 col-xs-12 col-sm-3">
+                            <a href="http://xm.bzw315.com/shop/11989/" title="河源市品尚装饰有限公司" class="logo" target="_blank">
+                                <img class="logoimg" src="1.png" alt="河源市品尚装饰有限公司" style="display: block;">
+                            </a>
+                            <p>已有<span>15751</span>人咨询</p>
+                        </div>
+                        <div class="txt_box  col-md-6 col-xs-12 col-sm-5">
+                            <div class="txt">
+                                <h4>
+                                    <a href="http://xm.bzw315.com/shop/11989/" title="河源市品尚装饰有限公司" target="_blank">河源市品尚装饰有限公司</a>
+                                    <a href="javascript:void(0);" class="icon_badge_box">
+                                        <i class="icon_badge_a" title="保障网A级信用"></i>
+                                        <i class="icon_badge_v" title="保障网Vip会员"></i>
+                                    </a>
+                                </h4>
+                                <p class="aution">
+                                    <span class="s1" title="营业执照已上传">营</span>
+                                    <span class="s2" >认</span>
+                                    <span class="s3" >惠</span>
+                                    <span class="s4" >金</span>
+                                    <span class="s5" >设</span>
+                                    <span class="s6" >工</span>
+                                    <span class="s7" >评</span>
+                                </p>
+                                <p class="add"><i class="fa fa-map-marker"></i>河源市源城区文安路西长安路南B11，12卡2楼</p>
+                            </div>
+                            <div class="free_part">
+                                <a href="javascript:void(0);" class="free_baojia bzw_popup_04" title="免费装修报价">免费装修报价</a>
+                                <a href="javascript:void(0);" class="free_zixun bzw_popup_03" title="免费预约咨询">免费预约咨询</a>
+                            </div>
+                        </div>
+                        <div class="num_box  col-md-3 col-xs-12 col-sm-4">
+                            <p>口碑值</p>
+                            <strong>0</strong>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="logo-box col-md-3 col-xs-12 col-sm-3">
+                            <a href="http://xm.bzw315.com/shop/27532/" title="河源飞尚墙绘壁画工作室" class="logo" target="_blank">
+                                <img class="logoimg"  src="1.png" alt="河源飞尚墙绘壁画工作室" style="display: block;">
+                            </a><p>已有<span>6295</span>人咨询</p>
+                        </div>
+                        <div class="txt_box col-md-6 col-xs-12 col-sm-5">
+                            <div class="txt">
+                                <h4>
+                                    <a href="http://xm.bzw315.com/shop/27532/" title="河源飞尚墙绘壁画工作室" target="_blank">河源飞尚墙绘壁画工作室</a>
+                                    <a href="javascript:void(0);" class="icon_badge_box">
+                                        <i class="icon_badge_a" title="保障网A级信用"></i>
+                                        <i class="icon_badge_v" title="保障网Vip会员"></i>
+                                    </a>
+                                </h4>
+                                <p class="aution">
+                                    <span class="s1" title="营业执照已上传">营</span>
+                                    <span class="s2" >认</span>
+                                    <span class="s3" >惠</span>
+                                    <span class="s4" >金</span>
+                                    <span class="s5" >设</span>
+                                    <span class="s6" >工</span>
+                                    <span class="s7" >评</span>
+                                </p>
+                                <p class="add"><i class="fa fa-map-marker"></i>河源惠州</p>
+                            </div>
+                            <div class="free_part">
+                                <a href="javascript:void(0);" class="free_baojia bzw_popup_04" title="免费装修报价">免费装修报价</a>
+                                <a href="javascript:void(0);" class="free_zixun bzw_popup_03" title="免费预约咨询">免费预约咨询</a>
+                            </div>
+                        </div>
+                        <div class="num_box col-md-3 col-xs-12 col-sm-4">
+                            <p>口碑值</p>
+                            <strong>0</strong>
+                        </div>
+                    </li>
+                    <li class="row">
+                        <div class="logo-box  col-md-3 col-xs-12 col-sm-3">
+                            <a href="http://xm.bzw315.com/shop/1137/" title="河源欧尚工坊墙绘工作室" class="logo" target="_blank">
+                                <img class="logoimg"  src="1.png" alt="河源欧尚工坊墙绘工作室" style="display: block;">
+                            </a><p>已有<span>8847</span>人咨询</p>
+                        </div>
+                        <div class="txt_box  col-md-6 col-xs-12 col-sm-5">
+                            <div class="txt">
+                                <h4>
+                                    <a href="http://xm.bzw315.com/shop/1137/" title="河源欧尚工坊墙绘工作室" target="_blank">河源欧尚工坊墙绘工作室</a>
+                                    <a href="javascript:void(0);" class="icon_badge_box">
+                                        <i class="icon_badge_a" title="保障网A级信用"></i>
+                                        <i class="icon_badge_v" title="保障网Vip会员"></i>
+                                        <i class="icon_badge_s" title="保障网诚信认证"></i>
+                                    </a>
+                                </h4>
+                                <p class="aution">
+                                    <span class="s1" title="营业执照已上传">营</span>
+                                    <span class="s2" >认</span>
+                                    <span class="s3" >惠</span>
+                                    <span class="s4" >金</span>
+                                    <span class="s5" >设</span>
+                                    <span class="s6" >工</span>
+                                    <span class="s7" >评</span>
+                                </p>
+                                <p class="add"><i class="fa fa-map-marker"></i>河源市新城区旺福路人人乐超市斜对面</p>
+                            </div>
+                            <div class="free_part">
+                                <a href="javascript:void(0);" class="free_baojia bzw_popup_04" title="免费装修报价">免费装修报价</a>
+                                <a href="javascript:void(0);" class="free_zixun bzw_popup_03" title="免费预约咨询">免费预约咨询</a>
+                            </div>
+                        </div>
+                        <div class="num_box  col-md-3 col-xs-12 col-sm-4">
+                            <p>口碑值</p>
+                            <strong>0</strong>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="side_bar fr scroll-fixed-main">
+                    <!-- 登录框 -->
+                    <div class="login">
+                        <h3 class="m-t-none m-b txt-lred">透明装修 品质无忧</h3>
+                        <form role="form">
+                            <div class="form-group">
+                                <label style="width:265.5px"><input type="applyuser" placeholder="您的称呼" class="form-control" name="applyuser"></label>
+                            </div>
+                            <div class="form-group">
+                                <label style="width:265.5px"><input type="mobile" placeholder="手机号码" class="form-control" name="mobile"></label>
+                            </div>
+                            <div class="form-group" style="float:left;margin-left: -15px;">
+                                <select class="form-control" name="s_province" id="s_province">
+                                    <option>省/市</option>
+                                </select>
+                                <select style="width: 92px;" class="form-control" name="s_city" id="s_city">
+                                    <option>市/地区</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="address" placeholder="所在小区" class="form-control" name="address">
+                            </div>
+                            <div  class="form-group">
+                                <button class="btn btn-block btn-outline btn-info" type="button" onclick="add.addcheck();">
+                                    <strong>立即免费申请</strong>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- 排行榜 -->
+                    <div class="well_known">
+                        <h4>河源装修公司排行榜 </h4>
+                        <span><a href="#this" class="bzw_popup_05">河源装修知名品牌</a> <a href="#this" class="bzw_popup_05">河源十佳装修公司</a></span>
+                        <ul>
+                            <li>
+                                <a href="" title="河源装修知名品牌" target="_blank">
+                                    <i></i>
+                                    <h6>河源装修知名品牌</h6>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" title="河源装修知名品牌" target="_blank">
+                                    <i></i>
+                                    <h6>河源装修知名品牌</h6>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" title="河源装修知名品牌" target="_blank">
+                                    <i></i>
+                                    <h6>河源装修知名品牌</h6>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" title="河源装修知名品牌" target="_blank">
+                                    <i></i>
+                                    <h6>河源装修知名品牌</h6>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" title="河源装修知名品牌" target="_blank">
+                                    <i></i>
+                                    <h6>河源装修知名品牌</h6>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" title="河源装修知名品牌" target="_blank">
+                                    <i></i>
+                                    <h6>河源装修知名品牌</h6>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--最新签单-->
+                    <div class="new_order">
+                        <h4>河源装修公司最新签单</h4>
+                        <table width="100%">
+                            <tbody><tr>
+                                <th>业主</th>
+                                <th>小区名称</th>
+                                <th>房屋面积</th>
+                            </tr>
+                            <tr>
+                                <td>黄先生</td>
+                                <td title="自建房">自建房</td>
+                                <td>40㎡</td>
+                            </tr>
+                            <tr>
+                                <td>吴先生</td>
+                                <td title="广东龙川县">广东龙川县</td>
+                                <td>120㎡</td>
+                            </tr>
+                            <tr>
+                                <td>李女士</td>
+                                <td title="同安西柯自建房">万夏龙景</td>
+                                <td>40㎡</td>
+                            </tr>
+                            <tr>
+                                <td>孟女士</td>
+                                <td title="私人">自建房</td>
+                                <td>120㎡</td>
+                            </tr>
+                            <tr>
+                                <td>李女士</td>
+                                <td title="河源雅居乐">河源雅居乐</td>
+                                <td>86.㎡</td>
+                            </tr>
+                            </tbody></table>
+                    </div>
+                    <!--保障服务-->
+                    <div class="find_company">
+                        <h4>河源装修要保障</h4>
+                        <ul>
+                            <li class="row">
+                                <i class="i-08 col-md-4"></i>
+                                <div class="txt col-md-8 ">
+                                    <h6>
+                                        <a href="http://www.bzw315.com/zhaobiao/" target="_blank">不懂装修？</a>
+                                    </h6>
+                                    <p>全程装修保障，装修立省30%。<br>免费量房，免费装修报价，先行赔付。</p>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <i class="i-09 col-md-4"></i>
+                                <div class="txt col-md-8">
+                                    <h6>
+                                        <a href="http://www.bzw315.com/zhaobiao/" target="_blank">比公司信用评级？？</a>
+                                    </h6>
+                                    <p>装修公司信用评级（比施工、比质量、比服务、比口碑），保障您的装修权益！</p>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <i class="i-10 col-md-4"></i>
+                                <div class="txt col-md-8">
+                                    <h6>
+                                        <a href="http://www.bzw315.com/zhaobiao/" target="_blank">怕装修猫腻、偷工减料？</a>
+                                    </h6>
+                                    <p>保障网装修顾问，免费一对一帮您解疑惑，全程装修服务保障。</p>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <i class="i-11 col-md-4"></i>
+                                <div class="txt col-md-8">
+                                    <h6>
+                                        <a href="http://www.bzw315.com/zhaobiao/" target="_blank">怕给了钱，质量没保障？</a>
+                                    </h6>
+                                    <p>申请“装修保障金”，免费获得全额现金保障。</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <input type="button" name="" class="btn bzw_popup_05" value="立即享受省心装修服务">
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+	<footer class="main-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="widget">
+						<h4 class="title">福牛之家</h4>
+						<div class="content friend-links">
+							<a href="/index.php?m=content&c=index&a=lists&catid=2" title="关于福牛" target="_blank">关于福牛</a>
+							<a href="#" title="招贤纳士" target="_blank">招贤纳士</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="widget">
+						<h4 class="title">新手上路</h4>
+						<div class="content friend-links">
+							<a href="#" title="发布招标" target="_blank">发布招标</a>
+							<a href="#" title="保障中心" target="_blank">保障中心</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="widget">
+						<h4 class="title">帮助中心</h4>
+						<div class="content friend-links">
+							<a href="#" title="常见问题" target="_blank">常见问题</a>
+							<a href="#" title="广告合作" target="_blank">广告合作</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="widget">
+						<h4 class="title">全国统一热线</h4>
+						<div class="content friend-links">
+							0762-3365866
+							在线咨询 9:00-18:00
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+    <!-- copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span>Copyright © <a href="/">福牛网</a></span> |
+                    <span>备案号：粤ICP备17010836号</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!--mainly javascript-->
+<script src="funiu/js/jquery-1.12.2.min.js"></script>
+<script src="funiu/js/bootstrap.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="funiu/js/main.js"></script>
+<script src="funiu/js/plugins/swiper/swiper.jquery.min.js"></script>
+<!-- Page-Level Scripts -->
+<script>
+
+</script>
+</html>
