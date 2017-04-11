@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>福牛网</title>	
+	<meta name="keywords" content="{$SEO['keyword']}">
+	<meta name="description" content="{$SEO['description']}">
+	<meta name="baidu-site-verification" content="be81O8l1DN" />
+    <!--mainly stylesheet-->
+    <link rel="stylesheet" href="funiu/css/bootstrap.min.css">
+    <link rel="stylesheet" href="funiu/css/index.css">
+    <link rel="stylesheet" href="funiu/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="funiu/css/plugins/swiper/swiper.min.css">
+</head>
+<body>
+<div id="wrapper" class="wrapper">
+    <!-- top navbar -->
+    <div class="row border-bottom gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-3 pull-left">
+                    <a href="/city.html" class="navbar-top-linka">城市导航</a>
+                </div>
+                <div class="col-lg-6 col-md-9 pull-right">
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <a href="/index.php?m=member&c=index&a=login">
+                                <i class="fa fa-sign-in"></i> 登录
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/index.php?m=member&c=index&a=register&siteid=1">
+                                <i class="fa fa-sign-out"></i> 免费注册
+                            </a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="javascript:void(0);" class="hot-tel">
+                                服务热线：0762-3365866
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- logo -->
+    <div class="row">
+        <div class="container">
+            <div class="row logo">
+                <div class="col-lg-8 col-md-8 col-sm-8 hidden-xs">
+                   <a href="/"><img  style="width:416px;height:150px;margin-top:-15px;margin-bottom:-10px; bottom-right:none;"  
+				   src="funiu/images/logo.jpg" alt="" ></a>
+                </div>
+                <div class="col-xs-12 hidden-md hidden-lg hidden-sm">
+                    <a href="/"><img src="funiu/images/logo.jpg" alt="" width="80%" ></a>
+                </div>
+				<script language="javascript" src="{APP_PATH}index.php?m=poster&c=index&a=show_poster&id=1"></script>
+            </div>
+        </div>
+    </div>
+    <!-- main navbar -->
+    <div class="row border-botton-red">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <button type="button" class="btn btn-block btn-outline btn-lred no-radius hidden-lg hidden-md hidden-sm" onclick="showMainBar();">导航栏 <span class="caret"></span></button>
+                    <ul id="mainNavbar" class="nav navbar-nav main-navbar no-margin hidden-xs">
+                        <li class="active">
+                            <a aria-expanded="false" role="button" href="/"> 首页 </a>
+                        </li>
+                        <li class="dropdown">
+                            <a aria-expanded="false" role="button" class="dropdown-toggle" data-toggle="dropdown"> 效果图 <span class="caret"></span></a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li>
+									<a href="/index.php?m=content&c=index&a=lists&catid=12">效果图</a>
+                                </li>
+                                <li>
+									<a href="/index.php?m=content&c=index&a=lists&catid=13">家居美图</a>
+                                </li>
+                                <li>
+									<a href="/index.php?m=content&c=index&a=lists&catid=14">家装效果图</a>
+                                </li>
+                                <li>
+									<a href="/index.php?m=content&c=index&a=lists&catid=15">工装效果图</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a aria-expanded="false" role="button" href="/index.php?m=yp"> 装修公司 </a>
+                        </li>
+                        <li class="dropdown">
+                            <a aria-expanded="false" role="button" href="/index.php?m=content&c=index&a=lists&catid=16" class="dropdown-toggle" data-toggle="dropdown"> 装修知识 <span class="caret"></span></a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li>
+									<a href="/index.php?m=content&c=index&a=lists&catid=17">装修黑幕</a>
+                                </li>
+                                <li>
+									<a href="/index.php?m=content&c=index&a=lists&catid=18">交换空间</a>
+                                </li>
+                                <li>
+									<a href="/index.php?m=content&c=index&a=lists&catid=19">装修灵感</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a aria-expanded="false" role="button" href="/html/about/contactus/"> 联系我们 </a>
+                        </li>
+                        <li>
+                            <a aria-expanded="false" role="button" href="/index.php?m=formguide&c=index&a=index"> 业主评论 </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="wrapper wrapper-content">
+		<div class="container">
+			<!-- login box and hot ad -->
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-5 hidden-xs text-center">
+					<h3 class="m-t-none m-b txt-lred">透明装修 品质无忧</h3>
+					<form role="form">
+						<div class="form-group">
+							<label style="width:265.5px"><input type="applyuser" placeholder="您的称呼" class="form-control" name="applyuser"></label>
+						</div>
+						<div class="form-group">
+							<label style="width:265.5px"><input type="mobile" placeholder="手机号码" class="form-control" name="mobile"></label>
+						</div>
+						<div class="form-group" style="float:left;margin-left: -15px;">
+							<div class="col-lg-8" >
+								<select class="form-control" name="s_province" id="s_province">
+									<option>省/市</option>
+								</select>
+							</div>
+							<div class="col-lg-4">
+								<select style="width: 92px;" class="form-control" name="s_city" id="s_city">
+									<option>市/地区</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="address" placeholder="所在小区" class="form-control" name="address">
+						</div>
+						<div>
+							<button class="btn btn-block btn-outline btn-info" type="button" onclick="add.addcheck();">
+								<strong>立即免费申请</strong>
+							</button>
+						</div>
+					</form>
+					<div class="row login-box-ad">
+						<div class="col-sm-6 col-xs-6">
+							<a href="">免费量房验房</a>
+						</div>
+						<div class="col-sm-6 col-xs-6">
+							<a href="">免费设计报价</a>
+						</div>
+						<div class="col-sm-6 col-xs-6">
+							<a href="">多套方案选择</a>
+						</div>
+						<div class="col-sm-6 col-xs-6">
+							<a href="">福保金供保障</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="" style="width:653px;height:345px;">
+							</div>
+						</div>
+						<!-- 如果需要分页器 -->
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div id="demo" class="col-lg-2 col-md-2 col-sm-7 hidden-xs no-padding" style="height: 345px;overflow: hidden;"
+				onmouseout="timer=setInterval(mar,50)" onmouseover="clearInterval(timer)">
+					<div id="demo1">
+						<img src="funiu/images/liufu.jpg"/>
+						<p>欢迎六福装饰入驻福牛网</p>
+						<img src="funiu/images/jinyuan.jpg"/>
+						<p>欢迎丞信装饰入驻福牛网</p>
+						<img src="funiu/images/youjia.jpg"/>
+						<p>欢迎华浔装饰入驻福牛网</p>
+						<img src="funiu/images/libang.jpg"/>
+						<p>欢迎星艺装饰入驻福牛网</p>
+						<img src="funiu/images/mingjiang.jpg"/>
+						<p>欢迎名匠装饰入驻福牛网</p>
+						<img src="funiu/images/zhaiben.jpg"/>
+						<p>欢迎三星装饰入驻福牛网</p>
+						<img src="funiu/images/zhengzhi.jpg"/>
+						<p>欢迎易百装饰入驻福牛网</p>
+						<img src="funiu/images/rujia.jpg"/>
+						<p>欢迎如家装饰入驻福牛网</p>
+						<img src="funiu/images/shu.jpg"/>
+						<p>欢迎柠檬树装饰入驻福牛网</p>
+					</div>
+					<div id="demo2"></div>
+				</div>
+				<script>
+					var t=getid("demo"),t1=getid("demo1"),t2=getid("demo2"),sh=getid("show"),timer;
+						t2.innerHTML=t1.innerHTML;
+					function mar(){
+						if(t2.offsetTop<=t.scrollTop)
+							t.scrollTop-=t1.offsetHeight;
+						else
+							t.scrollTop++;
+						}
+						timer=setInterval(mar,1000);
+					function getid(id){
+						return document.getElementById(id);
+					}
+				</script>
+			</div>
+			<!-- Recommended decoration company -->
+			<script language="javascript" src="{APP_PATH}index.php?m=poster&c=index&a=show_poster&id=11"></script>
+			<div class="row">
+				<div class="col-lg-12 ">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h5>推荐装修公司</h5>
+							<div class="ibox-tools">
+								<a class="/index.php?m=yp">
+									更多
+								</a>
+							</div>
+						</div>
+						<div class="ibox-content no-padding">						
+							<div class="row cp">
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+									<a href="" title="六福装饰" target="_blank">
+										<img src="funiu/images/liufu.jpg" alt="">
+									</a>
+								</div>
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+									<a href="" title="丞信装饰" target="_blank">
+											<img src="funiu/images/jinyuan.jpg" alt="">
+									</a>
+								</div>
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+									<a href="" title="华浔装饰" target="_blank">
+										<img src="funiu/images/youjia.jpg" alt="">
+									</a>
+								</div>
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+									<a href="" title="星艺装饰" target="_blank">
+										<img src="funiu/images/libang.jpg" alt="">
+									</a>
+								</div>
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+									<a href="" title="名匠装饰" target="_blank">
+										<img src="funiu/images/mingjiang.jpg" alt="">
+									</a>
+								</div>
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+									<a href="" title="三星装饰" target="_blank">
+										<img src="funiu/images/zhaiben.jpg" alt="">
+									</a>
+								</div>
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+									<a href="" title="易百装饰" target="_blank">
+										<img src="funiu/images/zhengzhi.jpg" alt="">
+									</a>
+								</div>
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+									<a href="" title="如家装饰" target="_blank">
+										<img src="funiu/images/rujia.jpg" alt="">
+									</a>
+								</div>
+								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+									<a href="" title="立树装饰" target="_blank">
+										<img src="funiu/images/shu.jpg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Selected cases -->
+			<div class="row">
+				<div class="col-lg-12 ">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h5>精选设计案例  <small>家的温暖是我们的责任</small></h5>
+							<div class="ibox-tools">
+								<a href="/index.php?m=content&c=index&a=lists&catid=20">小户型</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=21">一居室</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=22">二居室</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=23">三居室</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=24">四居室</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=25">别墅</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=26">复式</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=14">家装</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=15">工装</a>
+							</div>
+						</div>
+						<div class="ibox-content no-padding" style="padding-top:15px!important;">
+							<div class="row">
+								<div class="col-lg-3 col-md-3 col-sm-3">
+									<a href="{$val['url']}" class="fancybox" target="_blank">
+										<img class="lazy-img" src="funiu/images/anli.jpg" alt="" data-original="">
+										<span>测试测试测试测试</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Decoration Raiders -->
+			<div class="row">
+				<div class="col-lg-12 ">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h5>装修攻略</h5>
+							<div class="ibox-tools">
+								<a class="#">更多</a>
+							</div>
+						</div>
+						<div class="ibox-content no-padding" style="padding-top:15px!important;">
+							<div class="row">
+							   <div class="col-lg-12">
+								   <div class="zxbox">
+									   <a href="/index.php?m=content&c=index&a=lists&catid=38" class="blind-box" target="_blank">
+										   <img src="funiu/images/home.jpg" style="width:70px;height:60px;">
+										   <span>上门量房</span>
+									   </a>
+								   </div>
+								   <div class="zxbox">
+									   <a href="/index.php?m=content&c=index&a=lists&catid=39" class="blind-box" target="_blank">
+										   <img src="funiu/images/prepare.jpg" style="width:70px;height:60px;">
+										   <span>前期准备</span>
+									   </a>
+								   </div>
+								   <div class="zxbox">
+									   <a href="/index.php?m=yp" class="blind-box" target="_blank">
+										   <img src="funiu/images/company.jpg" style="width:70px;height:60px;">
+										   <span>选装修公司</span>
+									   </a>
+								   </div>
+								   <div class="zxbox">
+									   <a href="/index.php?m=content&c=index&a=lists&catid=40" class="blind-box" target="_blank">
+										   <img src="funiu/images/design.jpg" style="width:70px;height:60px;">
+										   <span>设计阶段</span>
+									   </a>
+								   </div>
+								   <div class="zxbox">
+									   <a href="/index.php?m=content&c=index&a=lists&catid=41" class="blind-box" target="_blank">
+										   <img src="funiu/images/car.jpg" style="width:70px;height:60px;">
+										   <span>材料选购</span>
+									   </a>
+								   </div>
+								   <div class="zxbox">
+										   <a href="/index.php?m=content&c=index&a=lists&catid=42" class="blind-box" target="_blank">
+											   <img src="funiu/images/dian.jpg" style="width:70px;height:60px;">
+											   <span>施工阶段</span>
+										   </a>
+								   </div>
+								   <div class="zxbox">
+									   <a href="/index.php?m=content&c=index&a=lists&catid=43" class="blind-box" target="_blank">
+										   <img src="funiu/images/jun.jpg" style="width:70px;height:60px;">
+										   <span>竣工阶段</span>
+									   </a>
+								   </div>
+								   <div class="zxbox">
+									   <a href="/index.php?m=content&c=index&a=lists&catid=44" class="blind-box" target="_blank">
+										   <img src="funiu/images/ruan.jpg" style="width:70px;height:60px;">
+										   <span>软装配饰</span>
+									   </a>
+								   </div>
+								   <div class="zxbox">
+									   <a href="/index.php?m=content&c=index&a=lists&catid=45" class="blind-box" target="_blank">
+										   <img src="funiu/images/baozhang.jpg" style="width:70px;height:60px;">
+										   <span>装修保障</span>
+									   </a>
+								   </div>
+							   </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 4x4 model -->
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h5>装修流程</h5>
+							<div class="ibox-tools">
+								<a href="/index.php?m=content&c=index&a=lists&catid=46">More+</a>
+							</div>
+						</div>
+						<div class="ibox-content no-padding" style="padding-top:15px!important;">
+							<div class="row">
+								<div class="col-lg-4">
+									<img src="funiu/images/timg.jpg" alt="">
+								</div>
+								<div class="col-lg-8">
+								<p><a href="{$val['url']}" target="_blank">测试长沙市测试是上次说</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h5>材料选购</h5>
+							<div class="ibox-tools">
+							<a href="/index.php?m=content&c=index&a=lists&catid=49">More+</a>
+							</div>
+						</div>
+						<div class="ibox-content no-padding" style="padding-top:15px!important;">
+							<div class="row">
+								<div class="col-lg-4">
+									<img src="funiu/images/jiancai.jpg" alt="">
+								</div>
+								<div class="col-lg-8">
+									<p><a href="{$val['url']}" target="_blank">测试测试测试测试</a></p>
+								</div>
+							</div>
+						</div>
+							 
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h5>装修百科</h5>
+							<div class="ibox-tools">
+								<a href="/index.php?m=content&c=index&a=lists&catid=47">More+</a>
+							</div>
+						</div>
+					   
+						<div class="ibox-content no-padding" style="padding-top:15px!important;">
+							<div class="row">
+								<div class="col-lg-4">
+									<img src="funiu/images/zhishi.jpg" alt="">
+								</div>
+								<div class="col-lg-8">
+									<p><a href="{$val['url']}" target="_blank">测试测试测试测试</a></p>
+									<p><a href="{$val['url']}" target="_blank">测试测试测试测试</a></p>
+									<p><a href="{$val['url']}" target="_blank">测试测试测试测试</a></p>
+									<p><a href="{$val['url']}" target="_blank">测试测试测试测试</a></p>
+								</div>
+							</div>
+						</div> 
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h5>学装修</h5>
+							<div class="ibox-tools">
+								<a href="/index.php?m=content&c=index&a=lists&catid=48">More+</a>
+							</div>
+						</div>
+						<div class="ibox-content no-padding" style="padding-top:15px!important;">
+							<div class="row">
+								<div class="col-lg-4">
+									<img src="funiu/images/xuexi.jpg" alt="">
+								</div>
+								<div class="col-lg-8">
+									<p><a href="{$val['url']}" target="_blank">测试测试上次说</a></p>
+								</div>
+							</div>
+						</div> 
+					</div>
+				</div>		
+			</div>
+			<!-- Decoration effect -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h5>装修效果图 <small>美轮美奂的效果图</small></h5>
+							<div class="ibox-tools">
+								<a href="/index.php?m=content&c=index&a=lists&catid=28">中式</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=29">简约</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=30">现代</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=31">欧式</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=32">美式</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=33">田园</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=34">混搭</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=35">地中海</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=36">东南亚</a>
+								<a href="/index.php?m=content&c=index&a=lists&catid=37">日式</a>
+							</div>
+						</div>
+						<div class="ibox-content no-padding" style="padding:15px 0px !important;">
+							<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+								<div class="row xtu1r" style="padding-bottom: 10px;">
+									<div class="col-lg-8 col-md-8 col-sm-8 xtu1p">
+										<div class="xtu1">
+											<a href="/index.php?m=content&c=index&a=lists&catid=29" target="_blank" title="餐厅">
+												<img class="" data-original="img/003.jpg" src="funiu/images/003.jpg" alt="餐厅">
+												<div class="open">
+													<h6>北欧乡村</h6>
+													<span>崇尚自然北欧风</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 xtu2p" style="padding-left: 0;">
+										<div class="xtu2">
+											<a href="/index.php?m=content&c=index&a=lists&catid=31" target="_blank" title="背景墙">
+												<img class="lazy" data-original="img/001.jpg" src="funiu/images/001.jpg" alt="背景墙">
+												<div class="open">
+													<div class="open_bd">
+														<h6>低调奢华</h6>
+														<i></i>
+														<span>随意的生活方式</span>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 xtu3p"  style="padding-right:0;">
+										<div class="pic3">
+											<a href="/index.php?m=content&c=index&a=lists&catid=32" target="_blank" title="餐厨">
+												<img class="lazy" data-original="img/004.jpg" src="funiu/images/004.jpg" alt="榻榻米">
+												<div class="open">
+													<div class="open_bd">
+														<h6>北欧宜家</h6>
+														<i></i>
+														<span>诠释舒适的餐厨空间</span>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 xtu4p">
+										<div class="pic4">
+											<a href="/index.php?m=content&c=index&a=lists&catid=33" target="_blank" title="客厅">
+												<img class="lazy img-hover" data-original="img/005.jpg" src="funiu/images/005.jpg" alt="客厅">
+												<div class="open">
+													<h6>现代简约</h6>
+													<span>打造空间的舒适感</span>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 rb-box no-padding">
+								<a href="/index.php?m=content&c=index&a=lists&catid=28" target="_blank">
+									<img src="funiu/images/002.jpg" alt="">
+								</a>
+								<div class="notice">
+									<div class="notice-content">
+										<h6>灵感来源生活</h6>
+										<strong>装修图集</strong>
+										<span>DECORATE</span>
+										<i class="wave"></i>
+										<p>家装艺术<b>范</b></p>
+										<a href="/list-21-1.html" title="更多" target="_blank" class="more">MORE<i></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+					<div class="col-lg-12">
+						<div class="ibox float-e-margins">
+							<div class="ibox-title">
+								<h5>友情链接</h5>
+							</div>
+							<div class="ibox-content no-padding" style="padding-top:15px!important;">
+								<div class="ibox-yq">
+									<a href="{$v[url]}" target="_blank" title="{$v[name]}">友情链接</a>
+									<a href="{$v[url]}" target="_blank" title="{$v[name]}">友情链接</a>
+									<a href="{$v[url]}" target="_blank" title="{$v[name]}">友情链接</a>
+									<a href="{$v[url]}" target="_blank" title="{$v[name]}">友情链接</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	<footer class="main-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="widget">
+						<h4 class="title">福牛之家</h4>
+						<div class="content friend-links">
+							<a href="/index.php?m=content&c=index&a=lists&catid=2" title="关于福牛" target="_blank">关于福牛</a>
+							<a href="#" title="招贤纳士" target="_blank">招贤纳士</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="widget">
+						<h4 class="title">新手上路</h4>
+						<div class="content friend-links">
+							<a href="#" title="发布招标" target="_blank">发布招标</a>
+							<a href="#" title="保障中心" target="_blank">保障中心</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="widget">
+						<h4 class="title">帮助中心</h4>
+						<div class="content friend-links">
+							<a href="#" title="常见问题" target="_blank">常见问题</a>
+							<a href="#" title="广告合作" target="_blank">广告合作</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="widget">
+						<h4 class="title">全国统一热线</h4>
+						<div class="content friend-links">
+							0762-3365866
+							在线咨询 9:00-18:00
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+    <!-- copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span>Copyright © <a href="/">福牛网</a></span> |
+                    <span>备案号：粤ICP备17010836号</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!--mainly javascript-->
+<script src="funiu/js/jquery-1.12.2.min.js"></script>
+<script src="funiu/js/bootstrap.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="funiu/js/main.js"></script>
+<script src="funiu/js/plugins/swiper/swiper.jquery.min.js"></script>
+<!-- Page-Level Scripts -->
+<script>
+   var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+        autoplay:3000,
+        speed:2000,
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+		prevButton:".swiper-button-prev",/*前进按钮*/  
+        nextButton:".swiper-button-next",/*后退按钮*/  
+    })
+</script>
+</html>
