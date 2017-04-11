@@ -1,0 +1,100 @@
+.wrap{
+    min-width: 200px;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    background-color:#f8f8f8;
+}
+div,ul,li,dl,dt,dd {margin:0px auto; padding:0px; width:auto; height:auto; font-size:12px; }
+ul,li,dl,dt,dd {overflow:hidden;}
+.clearfix:before, .clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.clearfix {
+    list-style: none;
+    display: flex;
+}
+.user-img{
+    position:absolute;
+    left: 34px;
+    bottom: 40px;
+}
+.user-type{
+    position:absolute;
+    left: 124px;
+    top:110px;
+    font-size: 12px;
+    color: #ffffff;
+}
+.rightdir/* 右箭头 */
+{
+    height:17.5px ;
+    position:absolute;
+    right: 28px;
+    top:100px;
+}
+.package-status{
+
+}
+.status-wrapper
+{
+    margin-top: 10%;
+}
+.status{
+    width: 25%;
+    margin-left: 8%;
+    font-size: 14px;
+    font-weight: 500;
+}
+.status-wrapper img {
+    height: 23px;
+    margin-top: 5px;
+    padding-left: 7%;
+}
+.notice-num{
+    display: block;
+    margin-right:14px;
+    margin-top: 4px;
+
+}
+.boder-xian{
+    margin-top:10px;
+    height: 45px;
+    border-right: 1px solid #dcdcdc;
+}
+.menu-all {
+  vertical-align: middle;
+}
+.menu-item {
+    background-color: #ffffff;
+    height: 40px;
+    border-bottom: 1px solid #EBEBEB;
+    overflow: hidden;
+    vertical-align: middle;
+    position: relative;
+
+}
+
+.menu-item img{
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 4%;
+}
+.menu-item span{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin-top: 5px;
+    margin-left: 8px;
+    position: absolute;
+    line-height: 30px;
+}
+/* 底部菜单栏 */
+.foot-nav{
+
+}
+.nav-txt{
+    display: block;
+}
