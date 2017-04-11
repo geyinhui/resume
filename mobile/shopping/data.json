@@ -1,9 +1,0 @@
-{
-  "name":"Ge__",
-  "age":"12",
-  "myBook":[
-    {"bookName":"< C++ >","author":"A"},
-    {"bookName":"< C++ >","author":"B"},
-    {"bookName":"< C++ >","author":"C"}
-  ]
-}
